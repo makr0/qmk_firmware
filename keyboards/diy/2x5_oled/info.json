@@ -1,0 +1,69 @@
+{
+    "manufacturer": "unlimited surprise systems",
+    "keyboard_name": "blackpill 2x5 OLED",
+    "maintainer": "crashc0de",
+    "bootloader": "stm32-dfu",
+    "bootloader_instructions": "Hold ESC while plugging USB in",
+    "board": "BLACKPILL_STM32_F411",
+    "processor": "STM32F411",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "midi": false,
+        "nkro": false,
+        "encoder": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["A5", "A6", "A7","B0", "B1",
+             "A0", "A1", "A2", "A3", "A4",
+             "B4", "B5" ]
+        ]
+    },
+    "usb": {
+        "device_version": "1.0.0",
+       "vid": "0x574C",
+       "pid": "0x0140"
+    },
+    "indicators": {
+        "on_state": 1
+    },
+    "encoder": {
+        "rotary": [
+            {
+            "pin_a": "B12",
+            "pin_b": "B13",
+            "resolution": 2
+            },
+            {
+            "pin_a": "B14",
+            "pin_b": "B15",
+            "resolution": 2
+            }
+        ]
+    },
+    "tapping": {
+        "toggle": 2
+    },
+    "layouts": {
+        "LAYOUT_5x2": {
+            "layout": [
+                { "label": "A5", "matrix": [0, 0], "x": 0, "y": 0 },
+                { "label": "A6", "matrix": [1, 0], "x": 1, "y": 0 },
+                { "label": "A7", "matrix": [2, 0], "x": 2, "y": 0 },
+                { "label": "B0", "matrix": [3, 0], "x": 3, "y": 0 },
+                { "label": "B1",  "matrix": [4, 0], "x": 4, "y": 0 },
+                { "label": "A0",  "matrix": [0, 1], "x": 0, "y": 1 },
+                { "label": "A1",  "matrix": [1, 1], "x": 1, "y": 1 },
+                { "label": "A2",  "matrix": [2, 1], "x": 2, "y": 1 },
+                { "label": "A3",  "matrix": [3, 1], "x": 3, "y": 1 },
+                { "label": "A4",  "matrix": [4, 1], "x": 4, "y": 1 },
+                { "label": "B4",  "matrix": [0, 2], "x": 0, "y": 2 },
+                { "label": "B5",  "matrix": [1, 2], "x": 1, "y": 2 }
+            ]
+        }
+    }
+}
